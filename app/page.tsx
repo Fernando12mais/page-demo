@@ -1,113 +1,142 @@
-import Image from 'next/image'
+import ArrowLeft from '@/assets/icons/arrow-left';
+import LineRight from '@/assets/icons/line-right';
+import McAfee from '@/assets/icons/mc-afee';
+import NortonAntivirus from '@/assets/icons/norton-antivirus';
+import RoundedPercentage from '@/assets/icons/rounded-percentage';
+import Star from '@/assets/icons/star';
+import Benefits from '@/components/atoms/benefits';
+import Guarantee from '@/components/atoms/guarantee';
+import PrimaryButton from '@/components/atoms/primary-button';
+import Radio from '@/components/atoms/radio';
+import Step from '@/components/atoms/step';
+import UList from '@/components/atoms/u-list';
+import { StepProps } from '@/models/step';
+import { UListProps } from '@/models/u-list';
+import Image from 'next/image';
 
 export default function Home() {
+  const steps: StepProps[] = [
+    { number: 1, status: 'done', text: 'Cart Review' },
+    { number: 2, status: 'done', text: 'Checkout' },
+    { number: 3, status: 'active', text: 'Special Offer' },
+    { number: 4, status: 'pending', text: 'Confirmation' },
+  ];
+
+  const stars = Array.from({ length: 5 });
+
+  const listItems: UListProps['itens'] = [
+    {
+      content: [
+        { text: 'Negative Ion Technology may ' },
+        { text: 'help with allergens', bold: true },
+      ],
+    },
+    {
+      content: [
+        { text: 'Designed for ' },
+        { text: 'air rejuvenation', bold: true },
+      ],
+    },
+    {
+      content: [
+        { text: 'Perfect for every room ', bold: true },
+        { text: 'in all types of places.' },
+      ],
+    },
+  ];
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className='mt-5 flex flex-col gap-6 px-5 pb-6 text-center'>
+      <div className='flex items-center justify-between'>
+        <Image
+          src='/clarifion-logo.png'
+          alt='logo image'
+          width={106}
+          height={20}
+        />
+
+        <div className='flex items-center gap-4'>
+          <McAfee />
+          <NortonAntivirus />
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <h1 className='mt-6'>Wait ! your order in progress.</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur </p>
+
+      <div className='flex justify-between gap-1'>
+        {steps.map((step) => (
+          <Step {...step} key={step.number} />
+        ))}
       </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      <h2>
+        <span className='text-primary'>ONE TIME ONLY</span> special price for 6
+        extra Clarifion for only <span className='text-primary'>$14 each</span>{' '}
+        ($84.00 total!)
+      </h2>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+      <Image
+        src={'/clarifion-details.png'}
+        alt='clarifion details image'
+        width={800}
+        height={600}
+      />
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
+      <div className='flex gap-4'>
+        <div className='flex items-center justify-center rounded-lg bg-primary'>
+          <Image
+            src={'/clarifion-mini.png'}
+            alt='clarifion-preview'
+            width={80}
+            height={80}
+          />
+        </div>
+        <div className='flex flex-col gap-2.5'>
+          <h3>Clarifion Air Ionizer</h3>
+          <div className='flex items-center gap-px'>
+            {stars.map((star, index) => (
+              <Star key={index} />
+            ))}
+          </div>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+          <label>
+            <Radio checked={true} label='12 left in Stock' />
+          </label>
+        </div>
+
+        <div className='ms-auto flex h-fit items-center gap-2'>
+          <span className='text-tertiary decorated-text text-[.625rem] font-semibold'>
+            $180
+          </span>{' '}
+          <span className='text-sm font-semibold text-primary'> $85 </span>
+        </div>
       </div>
+      <p className='text-center text-xs'>
+        Simply plug a Clarifion into any standard outlet and replace bulky,
+        expensive air purifiers with a simple.
+      </p>
+      <UList itens={listItems} />
+
+      <div className='bg-light flex items-center gap-4 px-4 py-3'>
+        <RoundedPercentage className='flex-shrink-0' />
+        <p className='text-start text-sm text-black'>
+          Save <span className='text-primary'>53%</span> and get{' '}
+          <span className='text-primary'>6 extra Clarifision</span> for only{' '}
+          <span className='text-primary'>$14 Each</span>.
+        </p>
+      </div>
+
+      <PrimaryButton>
+        Yes - Claim my discount <LineRight />
+      </PrimaryButton>
+
+      <Benefits />
+      <button className='mx-auto text-xs uppercase text-error underline underline-offset-2'>
+        No thanks, I don’t want this.
+      </button>
+
+      <Guarantee />
     </main>
-  )
+  );
 }
