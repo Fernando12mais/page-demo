@@ -46,7 +46,7 @@ export default function Home() {
   ];
 
   return (
-    <main className='max-w-notebook mx-auto mt-5 flex flex-col gap-6 px-5 pb-6 text-center lg:gap-8 lg:px-0 lg:text-start'>
+    <main className='max-w-notebook mx-auto mt-5 flex flex-col gap-6 px-5 pb-6 text-center lg:gap-8 lg:px-2 lg:text-start'>
       <div className='flex items-center justify-between'>
         <Image
           className='hidden lg:block'

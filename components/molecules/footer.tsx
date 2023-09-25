@@ -2,8 +2,8 @@ import Lock from '@/assets/icons/lock';
 
 export default function Footer() {
   return (
-    <div className='bg-on-background'>
-      <footer className='max-w-notebook mx-auto flex flex-col gap-6 p-5 text-xs text-background lg:flex-row lg:justify-between'>
+    <div className='bg-on-background '>
+      <footer className='max-w-notebook mx-auto flex flex-col gap-6 p-5 text-xs text-background lg:flex-row lg:justify-between lg:px-2'>
         <div className='flex justify-center gap-3 '>
           <span>Copyright (c) 2023</span> <span>|</span>
           <address className='not-italic'>

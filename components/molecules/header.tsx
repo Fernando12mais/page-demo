@@ -58,7 +58,7 @@ export default function Header() {
   }, [activeItem, handleChangeItem]);
   return (
     <div className='bg-on-background'>
-      <header className='max-w-notebook sticky top-[-1px] z-10 mx-auto flex items-center justify-between  gap-2 overflow-hidden px-5 py-2.5 text-xs text-background lg:px-0'>
+      <header className='max-w-notebook sticky top-[-1px] z-10 mx-auto flex items-center justify-between  gap-2 overflow-hidden px-5 py-2.5 text-xs text-background lg:px-2'>
         <button
           className='lg:hidden'
           onClick={() =>
