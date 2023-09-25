@@ -6,7 +6,7 @@ export default function UList({ itens }: UListProps) {
     <ul>
       {itens.map((item, index) => (
         <li
-          className='flex items-center gap-3 text-xs leading-[160%] text-info'
+          className='flex items-center gap-3 text-xs leading-[160%] text-info lg:text-base'
           key={index}
         >
           <Checkmark />

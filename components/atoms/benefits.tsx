@@ -9,14 +9,15 @@ import Visa from '@/assets/icons/visa';
 
 export default function Benefits() {
   return (
-    <div className='border-border rounded-[.25rem] border px-4 py-2'>
-      <div className='flex items-center gap-3 whitespace-nowrap text-xs text-info'>
+    <div className='border-border flex flex-col rounded-[.25rem] border px-4 py-2 lg:flex-row lg:gap-4'>
+      <div className='flex items-center justify-center gap-3 whitespace-nowrap text-xs text-info'>
         <span>Free shipping</span>
-        <span>|</span>
+        <span className='text-border'>|</span>
         <Lock className='m-0 inline-block' />
         <span> Secure 256-bit SSL encryption</span>
       </div>
-      <hr className='my-3 bg-info' />
+      <span className='text-border hidden lg:inline-block'>|</span>
+      <hr className='my-3 bg-info lg:hidden' />
       <div className='flex items-center justify-center gap-[.125rem]'>
         <Visa />
         <ShopPay />

@@ -3,14 +3,13 @@ import { ComponentProps } from 'react';
 export default function NortonAntivirus(props: ComponentProps<'svg'>) {
   return (
     <svg
-      width='41'
-      height='16'
       viewBox='0 0 41 16'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
+      className='h-4 w-11 lg:h-8 lg:w-[5.5rem]'
       {...props}
     >
-      <g clip-path='url(#clip0_78_301)'>
+      <g clipPath='url(#clip0_78_301)'>
         <path
           d='M6.86115 2.1257C3.07275 2.1257 0 5.23223 0 9.06228C0 12.8923 3.07275 15.9987 6.86115 15.9987C10.6495 15.9987 13.7221 12.8925 13.7221 9.06249C13.7221 5.23244 10.6495 2.12591 6.86115 2.12591V2.1257ZM6.83552 4.30187C9.43738 4.30187 11.544 6.43182 11.544 9.06228C11.544 11.6927 9.43738 13.8225 6.83552 13.8225C4.23366 13.8225 2.12052 11.6927 2.12052 9.06228C2.12052 6.43182 4.23366 4.30187 6.83552 4.30187Z'
           fill='#FEB511'

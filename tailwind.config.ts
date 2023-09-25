@@ -5,6 +5,7 @@ const config: Config = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './assets/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
@@ -26,10 +27,36 @@ const config: Config = {
         label: '#37465A',
         light: '#EDF3FD',
         border: '#CFCFCF',
+        success: '#5BB59A',
+      },
+      maxWidth: {
+        notebook: '77.8125rem',
       },
       fontSize: {
         header1: '2rem',
       },
+    },
+    keyframes: {
+      comeInLeft: {
+        from: {
+          translate: '200%',
+        },
+        to: {
+          translate: '0%',
+        },
+      },
+      comeInRight: {
+        from: {
+          translate: '-200%',
+        },
+        to: {
+          translate: '0%',
+        },
+      },
+    },
+    animation: {
+      comeFromLeft: 'comeInLeft 1s forwards ease-out',
+      comeFromRight: 'comeInRight 1s forwards ease-out',
     },
   },
   plugins: [],

@@ -3,11 +3,10 @@ import { ComponentProps } from 'react';
 export default function McAfee(props: ComponentProps<'svg'>) {
   return (
     <svg
-      width='44'
-      height='16'
       viewBox='0 0 44 16'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
+      className='h-4 w-11 lg:h-8 lg:w-[5.5rem]'
       {...props}
     >
       <path
@@ -22,8 +21,8 @@ export default function McAfee(props: ComponentProps<'svg'>) {
         d='M7.62859 15.2465C7.62859 15.2465 -0.0931287 12.5872 0.784339 1.7285C3.02188 1.108 5.3033 0.753428 7.62859 0.709106C9.95388 0.753428 12.2792 1.108 14.5167 1.7285C15.3942 12.5429 7.62859 15.2465 7.62859 15.2465Z'
         fill='white'
         stroke='black'
-        stroke-width='0.515'
-        stroke-linecap='round'
+        strokeWidth='0.515'
+        strokeLinecap='round'
       />
       <path
         d='M7.62859 15.2465C7.62859 15.2465 -0.0931287 12.5872 0.784339 1.7285C3.02188 1.108 5.3033 0.753428 7.62859 0.709106C9.95388 0.753428 12.2792 1.108 14.5167 1.7285C15.3942 12.5429 7.62859 15.2465 7.62859 15.2465Z'
@@ -118,12 +117,12 @@ export default function McAfee(props: ComponentProps<'svg'>) {
           y2='16.4994'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#646567' />
-          <stop offset='0.097' stop-color='#717274' />
-          <stop offset='0.317' stop-color='#898B8D' />
-          <stop offset='0.54' stop-color='#9A9B9D' />
-          <stop offset='0.766' stop-color='#A4A5A7' />
-          <stop offset='1' stop-color='#A7A8AA' />
+          <stop stopColor='#646567' />
+          <stop offset='0.097' stopColor='#717274' />
+          <stop offset='0.317' stopColor='#898B8D' />
+          <stop offset='0.54' stopColor='#9A9B9D' />
+          <stop offset='0.766' stopColor='#A4A5A7' />
+          <stop offset='1' stopColor='#A7A8AA' />
         </linearGradient>
         <linearGradient
           id='paint1_linear_78_268'
@@ -133,15 +132,15 @@ export default function McAfee(props: ComponentProps<'svg'>) {
           y2='11.5144'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#C6C7C8' />
-          <stop offset='0.092' stop-color='#DCDDDD' />
-          <stop offset='0.203' stop-color='#F0F0F0' />
-          <stop offset='0.316' stop-color='#FBFBFB' />
-          <stop offset='0.433' stop-color='white' />
-          <stop offset='0.537' stop-color='#F6F7F7' />
-          <stop offset='0.704' stop-color='#DFDFE0' />
-          <stop offset='0.913' stop-color='#B9BABB' />
-          <stop offset='1' stop-color='#A7A8AA' />
+          <stop stopColor='#C6C7C8' />
+          <stop offset='0.092' stopColor='#DCDDDD' />
+          <stop offset='0.203' stopColor='#F0F0F0' />
+          <stop offset='0.316' stopColor='#FBFBFB' />
+          <stop offset='0.433' stopColor='white' />
+          <stop offset='0.537' stopColor='#F6F7F7' />
+          <stop offset='0.704' stopColor='#DFDFE0' />
+          <stop offset='0.913' stopColor='#B9BABB' />
+          <stop offset='1' stopColor='#A7A8AA' />
         </linearGradient>
         <linearGradient
           id='paint2_linear_78_268'
@@ -151,12 +150,12 @@ export default function McAfee(props: ComponentProps<'svg'>) {
           y2='10.4163'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#4B4B4D' />
-          <stop offset='0.013' stop-color='#4D4D4F' />
-          <stop offset='0.253' stop-color='#67686A' />
-          <stop offset='0.497' stop-color='#797A7C' />
-          <stop offset='0.744' stop-color='#838486' />
-          <stop offset='1' stop-color='#87888A' />
+          <stop stopColor='#4B4B4D' />
+          <stop offset='0.013' stopColor='#4D4D4F' />
+          <stop offset='0.253' stopColor='#67686A' />
+          <stop offset='0.497' stopColor='#797A7C' />
+          <stop offset='0.744' stopColor='#838486' />
+          <stop offset='1' stopColor='#87888A' />
         </linearGradient>
         <linearGradient
           id='paint3_linear_78_268'
@@ -166,10 +165,10 @@ export default function McAfee(props: ComponentProps<'svg'>) {
           y2='10.8171'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#8B1325' />
-          <stop offset='0.607' stop-color='#CB0233' />
-          <stop offset='0.708' stop-color='#CB0233' />
-          <stop offset='1' stop-color='#8A193F' />
+          <stop stopColor='#8B1325' />
+          <stop offset='0.607' stopColor='#CB0233' />
+          <stop offset='0.708' stopColor='#CB0233' />
+          <stop offset='1' stopColor='#8A193F' />
         </linearGradient>
         <radialGradient
           id='paint4_radial_78_268'
@@ -179,9 +178,9 @@ export default function McAfee(props: ComponentProps<'svg'>) {
           gradientUnits='userSpaceOnUse'
           gradientTransform='translate(-4220.45 -3072.58) scale(10.1156 10.2189)'
         >
-          <stop stop-color='#CB0233' />
-          <stop offset='0.461' stop-color='#CB0233' />
-          <stop offset='1' stop-color='#8A193F' />
+          <stop stopColor='#CB0233' />
+          <stop offset='0.461' stopColor='#CB0233' />
+          <stop offset='1' stopColor='#8A193F' />
         </radialGradient>
         <linearGradient
           id='paint5_linear_78_268'
@@ -191,10 +190,10 @@ export default function McAfee(props: ComponentProps<'svg'>) {
           y2='10.3456'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#8B1325' />
-          <stop offset='0.607' stop-color='#CB0233' />
-          <stop offset='0.708' stop-color='#CB0233' />
-          <stop offset='1' stop-color='#8A193F' />
+          <stop stopColor='#8B1325' />
+          <stop offset='0.607' stopColor='#CB0233' />
+          <stop offset='0.708' stopColor='#CB0233' />
+          <stop offset='1' stopColor='#8A193F' />
         </linearGradient>
       </defs>
     </svg>

@@ -3,14 +3,17 @@
 @tailwind utilities;
 
 h1 {
-  @apply text-header1 font-normal uppercase leading-[140%];
+  @apply text-header1 font-normal uppercase leading-[140%]  lg:text-5xl lg:leading-none;
 }
 h2 {
-  @apply text-2xl font-normal capitalize leading-[140%];
+  @apply text-2xl font-normal capitalize leading-[140%] lg:text-3xl lg:text-[2rem];
+}
+h3 {
+  @apply text-sm capitalize leading-none  lg:text-xl;
 }
 
 p {
-  @apply font-normal leading-[140%] text-info;
+  @apply font-normal leading-[140%] text-info lg:text-2xl  lg:leading-none;
 }
 .decorated-text {
   position: relative;
@@ -48,11 +51,9 @@ p {
   top: 50%;
   left: 0;
   translate: 0 -50%;
-  height: 0.75rem;
-  width: 0.75rem;
   border-radius: 50%;
 
-  @apply bg-light;
+  @apply bg-light h-3 w-3 lg:h-4 lg:w-4;
 }
 
 /* On mouse-over, add a grey background color */

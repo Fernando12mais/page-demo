@@ -10,7 +10,7 @@ export default function GPay(props: ComponentProps<'svg'>) {
       xmlns='http://www.w3.org/2000/svg'
       {...props}
     >
-      <g clip-path='url(#clip0_78_470)'>
+      <g clipPath='url(#clip0_78_470)'>
         <path
           opacity='0.07'
           d='M22.1053 0H1.89474C0.821053 0 0 0.758333 0 1.75V12.25C0 13.2417 0.88421 14 1.89474 14H22.1053C23.1789 14 24 13.2417 24 12.25V1.75C24 0.758333 23.1158 0 22.1053 0Z'

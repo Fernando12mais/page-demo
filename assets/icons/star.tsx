@@ -8,6 +8,7 @@ export default function Star(props: ComponentProps<'svg'>) {
       viewBox='0 0 12 12'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
+      className='h-3 w-3 lg:h-[1.125rem] lg:w-[1.125rem]'
       {...props}
     >
       <path
