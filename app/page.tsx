@@ -122,12 +122,12 @@ export default function Home() {
               />
             </div>
             <div className='flex flex-1 flex-col gap-2.5  lg:gap-3'>
-              <div className='flex max-h-4 items-center'>
+              <div className='flex items-center lg:max-h-4'>
                 <h3>Clarifion Air Ionizer</h3>
                 <span className='text-tertiary decorated-text mr-2.5 ms-auto text-[.625rem] font-semibold lg:text-base'>
                   $180
                 </span>{' '}
-                <span className='max-h-4 text-sm font-semibold text-primary lg:text-[1.375rem] '>
+                <span className='text-sm font-semibold text-primary lg:text-[1.375rem] '>
                   {' '}
                   $84{' '}
                 </span>
